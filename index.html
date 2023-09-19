@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Barley Growth Tracker</title>
+ <style>
+    body {
+        background-image: url("barley.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ </style>
+</head>
+<body>
+ <h1>Barley Growth Tracker</h1>
+ <form action="/submit" method="POST">
+     <label for="date">Date:</label>
+     <input type="date" name="date" required><br><br>
+     <label for="temperature">Temperature:</label>
+     <input type="number" name="temperature" required><br><br>
+     <label for="humidity">Humidity:</label>
+     <input type="number" name="humidity" required><br><br>
+     <label for="ventilator_status">Ventilator Status:</label>
+     <input type="text" name="ventilator_status" required><br><br>
+     <label for="watering_amount">Watering Amount:</label>
+     <input type="number" name="watering_amount" required><br><br>
+     <label for="growth_status">Growth Status:</label>
+     <input type="text" name="growth_status" required><br><br>
+     <input type="submit" value="Submit">
+ </form>
+</body>
+</html>
